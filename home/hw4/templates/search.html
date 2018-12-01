@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Поиск по ответам</title>
+</head>
+<body>
+<form action='http://127.0.0.1:5000/result' method = 'POST'>
+	<fieldset>
+		<legend><b>Поиск ответов</b></legend>
+		Введите поисковый запрос (имя или фамилию респондента)<br>
+		<input type='text' name='what_search' required pattern='[а-яА-Я]+'><br>
+		<p><input type='submit' value='искать'></p>
+	</fieldset>
+<p><a href='/'>Назад на главную страницу.</a></p>
+<p><a href='/stats'>По этой ссылке Вы найдёте статистику опроса.</a></p>
+<p><a href='/json'>Здесь лежит json.</a></p>
+</body>
+</html>

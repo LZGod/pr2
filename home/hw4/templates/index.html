@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='utf-8'>
+	<title>Анкета</title>
+</head>
+<body>
+<form action='http://127.0.0.1:5000/thanks' method = 'POST'>
+	<fieldset>
+		<legend><b>Опрос </b></legend>
+	Является ли русский Вашим родным языком?<br>
+	<input type='radio' name='ask' value='да' checked>да<br>
+	<input type='radio' name='ask' value='нет' checked>нет<br>
+	Как бы Вы написали следующую фразу в неформальном контексте (например, личная переписка с другом)?<br>
+	<input type='radio' name='que1' value='день рождения(informal)' checked>У него завтра день рождения.<br>
+	<input type='radio' name='que1' value='день рождение(informal)' checked>У него завтра день рождение.<br>
+	<input type='radio' name='que1' value='день-рождение(informal)' checked>У него завтра день-рождение.<br>
+	Как бы Вы написали следующую фразу в формальном контексте (например, деловое письмо)?<br>
+	<input type='radio' name='que2' value='день рождения(formal)' checked>У него завтра день рождения.<br>
+	<input type='radio' name='que2' value='день рождение(formal)' checked>У него завтра день рождение.<br>
+	<input type='radio' name='que2' value='день-рождение(formal)' checked>У него завтра день-рождение.<br>
+	Сколько Вам лет?<br>
+	<input type='text' name='age' required pattern='[1-9]+'><br>
+	Ваше имя?<br>
+	<input type='text' name='name' required pattern='[а-яА-Я]+'><br>
+	Ваша фамилия?<br>
+	<input type='text' name='surname' required pattern='[а-яА-Я]+'><br>
+	<p><input type='submit' value='отправить'></p>
+	
+	</fieldset>
+</form>
+<p><a href='/stats'>По этой ссылке Вы найдёте статистику опроса.</a></p>
+<p><a href='/search'>Здесь можно найти интересующий Вас результат.</a></p>
+<p><a href='/json'>Здесь лежит json.</a></p>
+</body>
+</html>
