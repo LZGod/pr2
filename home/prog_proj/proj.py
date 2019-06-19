@@ -38,8 +38,7 @@ def mess_maker():
 @bot.message_handler(func=lambda m: True)
 def my_function(message):
     reply = mess_maker()
-    repl = reply.text
-    bot.send_message(message.chat.id, repl)
+    bot.send_message(message.chat.id, '%s' %reply)
 
 @app.route('/', methods=['GET', 'HEAD'])
 def index():
